@@ -1,6 +1,10 @@
 import java.util.Arrays;
 import java.util.HashMap;
-
+/**
+ * TwoSum returns the array indices of the two numbers that add up to a target int.
+ * @author zyud
+ *
+ */
 public class TwoSum {
 
 	public static void main(String[] args) {
