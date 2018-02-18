@@ -1,8 +1,3 @@
-/**
- * MedianOfTwoSortedArrays finds and returns the median of two sorted arrays.
- * @author zyud
- *
- */
 public class MedianOfTwoSortedArrays {
 
 	public static void main(String[] args) {
@@ -12,6 +7,12 @@ public class MedianOfTwoSortedArrays {
 		System.out.println(result); // expected = 12.5
 	}
 
+	/**
+	 * Finds and returns the median of two sorted arrays.
+	 * @param nums1 first int array
+	 * @param nums2 second int array
+	 * @return median of the two sorted arrays
+	 */
 	public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
         if (nums1.length == 0){
             int medianIndex = nums2.length % 2 == 0? nums2.length / 2 - 1 : nums2.length / 2;
