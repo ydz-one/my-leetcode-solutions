@@ -1,20 +1,5 @@
-import java.util.ArrayList;
-import java.util.List;
-
-public class PalindromeNumber {
-
-	public static void main(String[] args) {
-		System.out.println(isPalindrome(12321)); // expected: true
-		System.out.println(isPalindrome(467764)); // expected: true
-		System.out.println(isPalindrome(3453)); // expected: false
-	}
-
-	/**
-	 * This method determines whether an int is a palindrome or not.
-	 * @param x an integer
-	 * @return true if x is a palindrome, false otherwise
-	 */
-    public static boolean isPalindrome(int x) {
+class Solution {
+    public boolean isPalindrome(int x) {
         if (x < 0){
             return false;
         }

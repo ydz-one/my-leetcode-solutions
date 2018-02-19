@@ -1,19 +1,5 @@
-public class MedianOfTwoSortedArrays {
-
-	public static void main(String[] args) {
-		int a[] = {2, 5, 8, 12, 13, 24};
-		int b[] = {3, 15, 29, 42};
-		double result = findMedianSortedArrays(a, b);
-		System.out.println(result); // expected = 12.5
-	}
-
-	/**
-	 * Finds and returns the median of two sorted arrays.
-	 * @param nums1 first int array
-	 * @param nums2 second int array
-	 * @return median of the two sorted arrays
-	 */
-	public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
+class Solution {
+    public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         if (nums1.length == 0){
             int medianIndex = nums2.length % 2 == 0? nums2.length / 2 - 1 : nums2.length / 2;
             return nums2.length % 2 == 0 ? (nums2[medianIndex] + nums2[medianIndex + 1]) / 2.0 : (double) nums2[medianIndex];
@@ -50,9 +36,11 @@ public class MedianOfTwoSortedArrays {
                     index2++;
                 }
             }
+            
             if (indexOverall == medianIndex){
                 median1 = min;
             }
+            
             if (indexOverall == medianIndex + 1){
                 median2 = min;
                 return n % 2 == 0? (median1 + median2) / 2.0 : (double) median1;
